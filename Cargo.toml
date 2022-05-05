@@ -8,3 +8,27 @@ edition = "2021"
 [dependencies]
 restaurant = {path="./restaurant"}
 futures = "0.3"
+
+[[example]]
+name="move_zeroes"
+path="examples/struct_data/move_zeroes.rs"
+
+[[example]]
+name="plus_one"
+path="examples/struct_data/plus_one.rs"
+
+[[example]]
+name="remove_duplicates"
+path="examples/struct_data/remove_duplicates.rs"
+
+[[example]]
+name="min_stack"
+path="examples/struct_data/min_stack.rs"
+
+[[example]]
+name="valid_parentheses"
+path="examples/struct_data/valid_parentheses.rs"
+
+[[example]]
+name="max_sliding_window"
+path="examples/struct_data/max_sliding_window.rs"

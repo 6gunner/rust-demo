@@ -1,3 +1,6 @@
+#![allow(unused_variables)]
+#![allow(unused_imports)]
+#![allow(dead_code)]
 use futures::executor::block_on;
 use std::{
     borrow::{Borrow, BorrowMut},
@@ -29,6 +32,7 @@ use restaurant::eat_at_restaurant;
 fn main() {
     // println!("Hello, world!");
 
+    // struct相关
     // let score = 56;
     // let username = "Coda";
     // let age = 18;
@@ -51,6 +55,19 @@ fn main() {
     // }
     // test(student2);
 
+    // Option相关
+    // let x: i8 = 5;
+    // let y: Option<i8> = None;
+    // let sum = x + y.unwrap_or(0);
+    // println!("sum: {}", sum);
+
+    // 数组相关
+    let a = [9, 8, 7, 6, 5];
+    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    let slice = &a[1..3];
+
+    assert_eq!(slice, [2, 3]);
+    assert_eq!(slice, &[2, 3]);
     // let mut vec1 = vec![10,20,30];
     // for i in &mut vec1 {
     //   *i += 30;
